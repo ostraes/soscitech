@@ -170,5 +170,8 @@ border: 1px solid rgba(0,0,0,0.25);
   .title h1{
     font-size: 2rem;
   }
+  .ads img{
+    min-width: 300px;
+  }
 }
 
