@@ -1,0 +1,153 @@
+body{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)), url("techimg.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 10%;
+    
+}
+.page{
+    justify-items: center;
+    display: grid;
+    margin: 0 auto;
+   
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+.box{
+    background: rgba(0,0,0,0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(9px);
+    border: 1px solid rgba(0,0,0,0.05);
+    width: 80%;
+   border-radius: 30px;
+
+}
+
+.content{
+    margin: 30px;
+}
+.left .right{
+    width: 300px;
+    padding: 50px;
+   
+}
+.side{
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+   gap: 20px;
+}
+.logoimg{
+    border-radius: 5%;
+    margin-bottom: 20px;
+    height: 70%;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+}
+.socials{
+    margin: 30px;
+    margin-bottom: 0;
+
+}
+.socials a:hover{
+    color: black;
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+.socials a{
+    padding: 10px;
+    background-color: rgb(28, 133, 246);
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+.right{
+    color: white ;
+}
+h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: rgb(28, 133, 246);
+    font-family: monospace;
+}
+
+h3{
+    text-align: justify;
+    font-size: 1rem;
+    width: 80%;
+    margin-left: 20px;
+}
+.contact{
+    color: gray;
+}
+h4{
+    margin-bottom: 0;
+    margin-top: 10%;
+}
+p{
+    margin-top: 0;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+@media (max-width: 768px){
+    .page{
+        margin-top: -60%;
+       margin-bottom: 20%;
+       text-align: center;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-top: 40px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        margin: 0 auto;
+    }
+    .side{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .socials{
+        text-align: center;
+        margin-right: 0;
+    }
+    .maps{
+        width: 90%;
+        height: 90%;
+        margin: 20px;
+    }
+    .content{
+        margin: 0;
+    }
+    .box{
+        width: 100%;
+    }
+    .page{
+        justify-content: center;
+        padding: 0;
+    }
+    .left .right{
+        padding: 0;
+        width: 100%;
+    }
+    .right{
+        margin-top: 20%;
+    }
+    .num{
+        margin-bottom: 10%;
+    }
+    .logoimg{
+        width: 100%;
+    }
+}

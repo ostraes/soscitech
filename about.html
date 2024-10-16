@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSCITECH</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="nav.css" rel="stylesheet" type="text/css" />
+    <link href="about.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="icon.png">
+
+
+</head>
+<body>
+    
+   <header>
+    
+     <nav class="navbar">
+      <a href="" class="logo">SOSCI<span>TECH</span></a>
+      <ul class="opt-links">
+         <span id="close-opt-btn" class="bx bx-x"></span>
+         <li><a href="index.html"  class='bx bxs-home' target="_self"> Home</a></li>
+         <li><a  href="news.html" class='bx bxs-news' target="_self"> Articles</a></li>
+         <li><a  href="members.html" class='bx bxs-group' target="_self"> Members</a></li>
+         <li><a  href="#" class='bx bxs-info-circle' target="_self"> About Us</a></li>
+       </ul>
+       <span id="opt-btn" class="bx bx-menu"> </span>
+ 
+     </nav>
+   </header>
+
+   <div class="page">
+    <div class="box">
+      <div class="content">
+        <h1>ABOUT US</h1>
+      <div class="side">
+        <div class="left">
+          <img src="logo.png" class="logoimg">
+          <div class="socials">
+            <a  href="https://www.facebook.com" class='bx bxl-facebook' target="_self"></a>
+            <a  href="https://www.instagram.com" class='bx bxl-instagram' target="_self"></a>
+            <a  href="https://x.com" class='bx bxl-twitter' target="_self"></a>
+          </div>
+        </div>
+        <div class="right">
+          <h2>SOSCITECH</h2>
+          <h3>
+            Soscitech is an educational website focusing on important topics that connect science, technology, and society. This site aims to give readers a variety of articles dealing with significant subjects and questions in these interrelated fields. It is our mission to engage people in thoughtful discussion about the many challenges we are encountering today as well as those developments shaping our future.          </h3>
+          <h3>
+            We will explore these issues to enable us to better assist the public in developing a sharper and more integrated understanding of how scientific and technological advancements relate to life, as well as to society at large. We focus on important themes: the ethical implications of new technology, the role of science in solving environmental problems, and the ways in which innovation can enhance quality of life.
+          </h3>
+          <div class="contact">
+            <h4>Contact us: </h4>
+            <p>SOSCITECH@gmail.com</p>
+            <p class="num">09354879145 / 770-565-2379</p>
+            
+          </div>
+      </div>
+      </div>
+      </div>
+    </div>
+   </div>
+
+
+ 
+   <script>
+     const header = document.querySelector("header");
+     const optBtn = document.querySelector("#opt-btn");
+     const closeoptBtn = document.querySelector("#close-opt-btn");
+     optBtn.addEventListener("click", () => {
+       header.classList.toggle("show-mobile-opt");
+     });
+     closeoptBtn.addEventListener("click", () => {
+       optBtn.click();
+     });
+ 
+     
+   </script>
+   <script src="script.js"></script>
+ </body>
+</html>
