@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+  
+  }
+  body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)), url("techimg.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .members{
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 35%;
+  }
+  .head h4{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    margin: 20px 0px;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+  }
+  .card-container{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 50px;
+  }
+  .card{
+      width: 350px;
+      border-radius: 10px;
+      background: rgba(0,0,0,0.45);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0,0,0,0.225);
+      overflow: hidden;
+      box-shadow: 0px,2px,4px rgba(0,0,0,0.2);
+      margin: 20px;
+      clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  }
+  .card img{
+      width: 310px;
+      height: 200px;
+      border-radius: 10px;
+      margin: 20px 0px 20px 20px;
+      justify-content: center;
+      display: flex;
+  }
+  
+  .card-content{
+      padding: 2rem;
+      color: white;
+      text-align: center;
+      justify-content: center;
+  }
+  .card-content h3{
+      font-size: 1.5rem;
+      margin-top: -20px;
+  }
+  .card-content p {
+      color: gray;
+      font-size: 15px;
+      line-height: 1;
+     text-align: center;
+  }
+  .card-content a{
+      display: inline-block;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 6px;
+      color:  rgb(134, 192, 254);
+      font-size: 1.5rem;
+      
+  }
+  .socmed{
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+  }
+  .card-content a:hover{
+   
+    color:  blueviolet;
+    }
+
+
+@media (max-width: 900px){
+  .members{
+    margin-top: 50%;
+  }
+  
+}
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start; 
+    }
+    .head h4{
+      font-size: 3rem;
+        margin-top: -200px;
+    }
+    .card{
+      width: 300px;
+      
+      
+    }
+    .card img{
+      width: 85%;
+     
+    }
+   .members{
+    margin-top: auto;
+   }
+}
