@@ -115,6 +115,7 @@ blockquote::before {
   gap: 40px;
   width: 100%;
   padding: 5%;
+  margin-bottom: -120px;
   background-image: linear-gradient(to bottom right, rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)), url("techimg.png");
   background-position: center;
   background-size: cover;
